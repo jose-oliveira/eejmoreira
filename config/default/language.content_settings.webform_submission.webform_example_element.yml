@@ -1,0 +1,11 @@
+uuid: c374dfdd-b55a-49ed-9c3b-94867b2ecdfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.webform_example_element
+id: webform_submission.webform_example_element
+target_entity_type_id: webform_submission
+target_bundle: webform_example_element
+default_langcode: site_default
+language_alterable: false

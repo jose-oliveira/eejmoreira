@@ -1,0 +1,18 @@
+uuid: cfa24ff1-d148-4f14-8c0e-e590c85a6f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+id: node.landing_page.title
+field_name: title
+entity_type: node
+bundle: landing_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

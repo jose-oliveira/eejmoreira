@@ -1,0 +1,11 @@
+uuid: 6979a76a-e87a-4eb6-b4e1-cda30c46bef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.required_fields_for_ads
+id: webform_submission.required_fields_for_ads
+target_entity_type_id: webform_submission
+target_bundle: required_fields_for_ads
+default_langcode: site_default
+language_alterable: false

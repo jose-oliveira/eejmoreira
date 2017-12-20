@@ -1,0 +1,16 @@
+uuid: 433f7ef4-986b-49fd-9bbf-1e5508f4a9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: media.document
+target_entity_type_id: media
+target_bundle: document
+default_langcode: site_default
+language_alterable: false

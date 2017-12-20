@@ -1,0 +1,7 @@
+name: Webform Workflow
+type: module
+description: "Creates a field that references a Webform and saves its current configuration state."
+package: Custom
+core: '8.x'
+dependencies:
+  - 'drupal:webform'

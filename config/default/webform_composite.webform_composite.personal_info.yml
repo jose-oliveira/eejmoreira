@@ -1,0 +1,8 @@
+uuid: a9597488-089d-4624-9ba6-80bf9091fdc7
+langcode: en
+status: true
+dependencies: {  }
+id: personal_info
+label: 'Personal info'
+elements: "name:\n  '#type': textfield\n  '#title': 'First Name'\nlast_name:\n  '#type': textfield\n  '#title': 'Last name'\n"
+description: ''

@@ -1,0 +1,11 @@
+uuid: d039c85f-5ac5-4af5-aeb5-98cfb0e082ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.jcorp
+id: webform_submission.jcorp
+target_entity_type_id: webform_submission
+target_bundle: jcorp
+default_langcode: site_default
+language_alterable: false

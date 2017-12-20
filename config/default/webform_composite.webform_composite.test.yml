@@ -1,0 +1,8 @@
+uuid: c4dbed50-b222-41da-9f24-da9ddb16c2bf
+langcode: en
+status: true
+dependencies: {  }
+id: test
+label: Test
+elements: "field_1:\n  '#type': textfield\n  '#title': 'Field 1.1'\nfield_2:\n  '#type': textfield\n  '#title': 'Field 2'\n"
+description: ''

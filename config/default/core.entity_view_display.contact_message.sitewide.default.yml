@@ -1,0 +1,53 @@
+uuid: e1fe2a69-350f-486f-92eb-3b193e0b474e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sitewide
+    - field.field.contact_message.sitewide.field_name
+id: contact_message.sitewide.default
+targetEntityType: contact_message
+bundle: sitewide
+mode: default
+content:
+  field_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  mail:
+    weight: -2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    weight: -3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

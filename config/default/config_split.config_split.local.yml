@@ -1,0 +1,15 @@
+uuid: 82f829a4-587b-4893-92fa-baed661960ae
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+folder: ../config/local
+module:
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 9a146445-7fa1-4c70-ab5a-fbf731d4104c
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bartik
+id: languageswitcherinterfacetext
+theme: bartik
+region: header
+weight: -5
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher (Interface text)'
+  provider: language
+  label_display: visible
+visibility: {  }

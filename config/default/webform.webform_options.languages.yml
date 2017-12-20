@@ -1,0 +1,13 @@
+uuid: 14f34c08-6705-478f-b179-f8b7038f1152
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: zfz3m-OwD5WUumS1o7_BoVdZTyfUgHl3Mv1ESn8n4nc
+id: languages
+label: Languages
+category: Language
+options: ''

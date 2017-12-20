@@ -1,0 +1,11 @@
+uuid: b2f16445-c270-4645-a705-16c9db4d28c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.test
+id: webform_submission.test
+target_entity_type_id: webform_submission
+target_bundle: test
+default_langcode: site_default
+language_alterable: false

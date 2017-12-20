@@ -1,0 +1,11 @@
+uuid: 24c8a13d-87bb-4274-b891-6285c6bf57d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.mcorp
+id: webform_submission.mcorp
+target_entity_type_id: webform_submission
+target_bundle: mcorp
+default_langcode: site_default
+language_alterable: false

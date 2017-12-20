@@ -1,0 +1,24 @@
+uuid: eaa52831-956f-4c66-b9f9-cfe0ba5b3c12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_webform
+    - node.type.page
+  module:
+    - webform_workflow
+id: node.page.field_webform
+field_name: field_webform
+entity_type: node
+bundle: page
+label: Webform
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    webform_id: ''
+default_value_callback: ''
+settings: {  }
+field_type: webform_workflow

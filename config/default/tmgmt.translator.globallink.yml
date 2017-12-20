@@ -1,0 +1,15 @@
+uuid: 32c48288-fe05-40b7-9aa5-53b7e0bc174c
+langcode: en
+status: true
+dependencies:
+  module:
+    - globallink
+name: globallink
+label: GlobalLink
+description: 'GlobalLink is the world’s most powerful and flexible system to manage multilingual content'
+auto_accept: null
+weight: null
+plugin: globallink
+settings:
+  xliff_cdata: true
+remote_languages_mappings: {  }
