@@ -17,13 +17,37 @@ use Drupal\webform\WebformSubmissionInterface;
  */
 class WaterfallSubmitButton extends WebformElementBase {
 
+  // @TODO This could be moved to a separate class that gets the required components from the lender entity.
+  protected $requiredComponentsByLender = [
+    'demo' => [
+      'name' => [
+        '#type' => 'textfield',
+        '#title' => 'Name',
+      ],
+    ],
+    'others' => [
+      'name' => [
+        '#type' => 'textfield',
+        '#title' => 'Name',
+      ],
+      'last' => [
+        '#type' => 'textfield',
+        '#title' => 'Last name',
+      ],
+      'check' => [
+        '#type' => 'checkbox',
+        '#title' => 'Check this field',
+      ],
+    ],
+  ];
+
   /**
    * {@inheritdoc}
    */
   public function getDefaultProperties() {
     return [
       // Lenders settings.
-      'lenders' => 'demo',
+      'lender' => 'demo',
     ] + parent::getDefaultProperties();
   }
 
@@ -45,11 +69,11 @@ class WaterfallSubmitButton extends WebformElementBase {
     $form['element']['title']['#title'] = t('Label');
 
     // Adds lenders settings.
-    $form['lenders_settings'] = [
+    $form['lender_settings'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Lender settings'),
     ];
-    $form['lenders_settings']['lenders'] = [
+    $form['lender_settings']['lender'] = [
       '#type' => 'select',
       '#title' => $this->t('Lenders'),
       '#options' => [
@@ -57,10 +81,27 @@ class WaterfallSubmitButton extends WebformElementBase {
         'others' => $this->t('Others'),
       ],
       '#required' => TRUE,
-      '#multiple' => TRUE,
     ];
 
     return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
+    // @TODO REALLY Refactor that once we have real code.
+    $lenderID = $form_state->getValue('lender');
+    $lenderRequiredComponents = $this->requiredComponentsByLender[$lenderID];
+
+    /** @var \Drupal\webform\WebformInterface $webform */
+    $webform = $form_state->getFormObject()->getWebform();
+
+    foreach($lenderRequiredComponents as $componentID => $component){
+      if(!$webform->getElement($componentID)){
+        $webform->setElementProperties($componentID, $component);
+      }
+    }
   }
 
 }
