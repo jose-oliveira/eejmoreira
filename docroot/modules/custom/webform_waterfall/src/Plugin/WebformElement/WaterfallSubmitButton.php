@@ -17,7 +17,11 @@ use Drupal\webform\WebformSubmissionInterface;
  */
 class WaterfallSubmitButton extends WebformElementBase {
 
-  // @TODO This could be moved to a separate class that gets the required components from the lender entity.
+  /**
+   * Required components by lender.
+   *
+   * @var array
+   */
   protected $requiredComponentsByLender = [
     'demo' => [
       'name' => [
@@ -97,8 +101,8 @@ class WaterfallSubmitButton extends WebformElementBase {
     /** @var \Drupal\webform\WebformInterface $webform */
     $webform = $form_state->getFormObject()->getWebform();
 
-    foreach($lenderRequiredComponents as $componentID => $component){
-      if(!$webform->getElement($componentID)){
+    foreach ($lenderRequiredComponents as $componentID => $component) {
+      if (!$webform->getElement($componentID)) {
         $webform->setElementProperties($componentID, $component);
       }
     }

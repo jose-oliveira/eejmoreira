@@ -10,7 +10,7 @@ id: jcorp
 title: JCorp
 description: ''
 category: ''
-elements: "personal_info:\n  '#type': webform_wizard_page\n  '#title': Personal\n  personal_info_1:\n    '#type': 'webform_composite:personal_info'\n    '#title': 'Personal information'\n    '#name__title': Name\n    '#flexbox': '1'\n  other:\n    '#type': waterfall_submit_button\n    '#title': Other\n    '#lenders':\n      others: others\nbanking_info:\n  '#type': webform_wizard_page\n  '#title': 'Banking info'\n  account_number:\n    '#type': textfield\n    '#title': 'Account number'\n  submit:\n    '#type': waterfall_submit_button\n    '#title': Submit\n    '#lenders':\n      progressive: progressive\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n"
+elements: "name:\n  '#type': textfield\n  '#title': Name\ndemo:\n  '#type': waterfall_submit_button\n  '#title': Demo\nlast:\n  '#type': textfield\n  '#title': 'Last name'\ncheck:\n  '#type': checkbox\n  '#title': 'Check this field'\nother:\n  '#type': waterfall_submit_button\n  '#title': Other\n  '#lender': others\n"
 css: ''
 javascript: ''
 settings:
