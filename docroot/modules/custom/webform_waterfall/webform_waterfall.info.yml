@@ -1,6 +1,6 @@
-name: Custom Webform Waterfall
+name: Webform Waterfall
 type: module
-description: 'Customizations for Webform.'
+description: 'Submits a Webform through multiple steps.'
 package: Custom
 core: '8.x'
 dependencies:
