@@ -9,8 +9,6 @@
         "geerlingguy/drupal-vm": "~4.3",
         "drupal/webform": "5.x-dev",
         "drupal/webform_composite": "^1.0@beta",
-        "drupal/config_views": "^1.0@alpha",
-        "drupal/globallink": "^1.0@alpha",
         "drupal/console": "~1.0"
     },
     "require-dev": {},
