@@ -7,7 +7,9 @@
     "require": {
         "acquia/blt": "^9.2.0"
     },
-    "require-dev": {},
+    "require-dev": {
+        "geerlingguy/drupal-vm": "^4.8"
+    },
     "config": {
         "sort-packages": true
     },
@@ -50,8 +52,7 @@
         },
         "merge-plugin": {
             "require": [
-                "blt/composer.required.json",
-                "blt/composer.suggested.json"
+                "blt/composer.required.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,

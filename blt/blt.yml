@@ -1,15 +1,16 @@
 project:
   machine_name: eejmoreira
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: EJM
+  human_name: 'Employee site Jose Moreira'
   profile:
-    name: lightning
+    name: demo_umami
   local:
     protocol: http
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+  - 'eejmoreira@svn-12800.prod.hosting.acquia.com:eejmoreira.git'
 deploy:
   tag_source: true
 drush:
@@ -18,19 +19,5 @@ drush:
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
-modules:
-  local:
-    enable: [dblog, devel, seckit, views_ui]
-    uninstall: [acquia_connector, shield]
-  ci:
-    enable: {  }
-    uninstall: [acquia_connector, shield]
-  dev:
-    enable: [acquia_connector, shield]
-    uninstall: {  }
-  test:
-    enable: [acquia_connector, shield]
-    uninstall: [devel, views_ui]
-  prod:
-    enable: [acquia_connector, shield]
-    uninstall: [devel, views_ui]
+cm:
+  allow-overrides: true
