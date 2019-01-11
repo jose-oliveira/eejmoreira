@@ -1,0 +1,33 @@
+uuid: 62184727-0e85-40fe-89ed-f518199c389b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media
+bundles:
+  audio:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  file:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  image:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  remote_video:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  video:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default

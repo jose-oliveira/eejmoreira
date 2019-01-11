@@ -1,0 +1,12 @@
+uuid: 0268ae18-34d5-4454-af75-c94c00df3ac1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file
+bundles:
+  file:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

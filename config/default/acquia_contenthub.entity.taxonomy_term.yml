@@ -1,0 +1,16 @@
+uuid: f4f3d408-0720-4303-a2c5-7fa3978bb9cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term
+bundles:
+  recipe_category:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }
+  tags:
+    enable_index: false
+    enable_viewmodes: false
+    rendering: {  }

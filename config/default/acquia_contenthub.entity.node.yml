@@ -1,0 +1,25 @@
+uuid: 4ba3cf91-0f46-44a6-8260-0426fe8bb02f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+  module:
+    - node
+id: node
+bundles:
+  article:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  page:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  recipe:
+    enable_index: true
+    enable_viewmodes: false
+    rendering:
+      default: default

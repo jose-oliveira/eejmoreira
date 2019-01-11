@@ -1,0 +1,28 @@
+uuid: b5970200-50cc-4d6e-9787-c9bcda45847c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content
+bundles:
+  banner_block:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  basic:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  disclaimer_block:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
+  footer_promo_block:
+    enable_index: false
+    enable_viewmodes: false
+    rendering:
+      default: default
