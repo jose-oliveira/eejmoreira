@@ -4,3 +4,27 @@ local:
     host: local.eejmoreira.com
     user: vagrant
     ssh: { options: '-o PasswordAuthentication=no -i $HOME/.vagrant.d/insecure_private_key' }
+dev:
+    uri: eejmoreiradev.prod.acquia-sites.com
+    host: staging-9174.prod.hosting.acquia.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/eejmoreira.dev/docroot
+    user: eejmoreira.dev
+    ssh: { options: '-p 22' }
+prod:
+    uri: eejmoreira.prod.acquia-sites.com
+    host: ded-3545.prod.hosting.acquia.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/eejmoreira.prod/docroot
+    user: eejmoreira.prod
+    ssh: { options: '-p 22' }
+stg:
+    uri: eejmoreirastg.prod.acquia-sites.com
+    host: staging-9173.prod.hosting.acquia.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/eejmoreira.stg/docroot
+    user: eejmoreira.stg
+    ssh: { options: '-p 22' }

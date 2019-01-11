@@ -10,7 +10,7 @@ project:
 git:
   default_branch: master
   remotes:
-  - 'eejmoreira@svn-12800.prod.hosting.acquia.com:eejmoreira.git'
+    - 'eejmoreira@svn-12800.prod.hosting.acquia.com:eejmoreira.git'
 deploy:
   tag_source: true
 drush:
@@ -21,3 +21,5 @@ drush:
   default_alias: '${drush.aliases.local}'
 cm:
   allow-overrides: true
+cloud:
+  appId: 9ab4363b-d7e2-487a-bc9e-16db9ece98a4
